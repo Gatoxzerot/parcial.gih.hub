@@ -1,0 +1,258 @@
+/* ==========================
+   Estilos generales
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #6b4226;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3d2b1f;
+}
+
+/* ==========================
+   Cabecera fija para todas las páginas
+========================== */
+#cabeceradetodos {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+}
+
+#cabeceradetodos h1 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+#cabeceradetodos a {
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+#cabeceradetodos img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* ==========================
+   Página 1 - Home
+========================== */
+/* Fondo de la página 1 */
+/* Fondo de la página 1 */
+#fondocompleto {
+    background-image: url('img1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+#fondocompleto h1{
+    font-size: 100px;
+}
+#fondocompleto h2{
+    font-size: 60px;
+}
+/* Cabecera fija para iconos y enlaces */
+#cabeceradetodos {
+    background-color: rgba(255, 255, 255, 0.8);  /* Fondo semitransparente */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;  /* Asegura que la cabecera esté por encima del fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);  /* Desenfoque del fondo */
+}
+
+#cabeceradetodos a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;  /* Color oscuro para visibilidad sobre fondo claro */
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+#cabeceradetodos a:hover {
+    color: #6b4226;  /* Cambio de color al pasar el mouse */
+}
+
+#cabeceradetodos img {
+    margin-right: 8px;
+    vertical-align: middle;
+    height: 40px;  /* Asegura el tamaño de los iconos */
+}
+
+/* Estilo para el contenedor de las redes */
+#redes {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#redes img {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+#redes {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#redes img {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* ==========================
+   Página 2 - Blog
+========================== */
+#contenedor1 {
+    padding: 40px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contenido1 h2 {
+    font-size: 30px;
+    color: #6b4226;
+    margin-bottom: 20px;
+}
+
+#contenido1 h3 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#contenido1 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+/* ==========================
+   Página 3 - Galería
+========================== */
+#contenedor2 {
+    padding: 40px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contenido2 figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#contenido2 img {
+    width: 32%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#contenido2 img:hover {
+    transform: scale(1.05);
+}
+
+#contenido2 h3 {
+    color: #555;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+/* ==========================
+   Página 4 - Videos
+========================== */
+#contenedor3 {
+    padding: 40px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contenido3 h2 {
+    font-size: 32px;
+    color: #6b4226;
+    margin-bottom: 30px;
+}
+
+#contenido3 iframe {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+#contenido3 h3 {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* ==========================
+   Pie de página para todas las páginas
+========================== */
+#pietodos {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eaeaea;
+}
+
+#pietodos img {
+    width: 100px;
+    height: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+#pietodos img:hover {
+    opacity: 1;
+}
